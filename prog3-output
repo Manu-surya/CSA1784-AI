@@ -1,0 +1,13 @@
+Enter the Number of rows : 2
+Enter the Number of Columns: 2
+Enter the elements of Matrix:
+1
+6
+9
+8
+-------Your  Matrix is---------
+[1, 6]
+[9, 8]
+Transpose matrix is: 
+[1, 9]
+[6, 8]
