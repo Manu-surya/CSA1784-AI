@@ -1,0 +1,15 @@
+p = float(input("Enter the first input: "))
+q = float(input("Enter the second input: "))
+oper = input("Enteroperation you want to perform (add,sub,mul,div): ")
+result = 0
+if oper == "add":
+    result = p+q 
+elif oper == "sub":
+    result = p-q
+elif oper == "mul":
+    result = p*q
+elif oper == "div":
+    result = p/q 
+else:
+    print("Invalid Input")
+print("Your answer is: ",result)
