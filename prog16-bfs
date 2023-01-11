@@ -1,26 +1,22 @@
 graph = {
-    'A': ['B', 'C', "D"],
-    'B': ['E', "F"],
-    'C': ['G', "I"],
-    'D': ["I"],
-    'E': [],
-    "F": [],
-    'G': [],
-    "I": []
+  '5' : ['3','7'],
+  '3' : ['2', '4'],
+  '7' : ['8'],
+  '2' : [],
+  '4' : ['8'],
+  '8' : []
 }
-
-def bfs(visit_complete, graph, current_node):
-    visit_complete.append(current_node)
-    queue = []
-    queue.append(current_node)
-
-    while queue:
-        s = queue.pop(0)
-        print(s)
-
-        for neighbour in graph[s]:
-            if neighbour not in visit_complete:
-                visit_complete.append(neighbour)
-                queue.append(neighbour)
-
-bfs([],graph,'A')
+visited = [] 
+queue = []
+def bfs(visited, graph, node): 
+  visited.append(node)
+  queue.append(node)
+  while queue:          
+    m = queue.pop(0) 
+    print (m, end = " ") 
+    for neighbour in graph[m]:
+      if neighbour not in visited:
+        visited.append(neighbour)
+        queue.append(neighbour)
+print("Following is the Breadth-First Search")
+bfs(visited, graph, '5')   
